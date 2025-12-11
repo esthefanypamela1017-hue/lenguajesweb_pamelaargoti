@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(2, 5, 4);
+
+}
+.cabecera{
+    background-color: rgb(225, 40, 40);
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 0px;
+    border-bottom:5px solid white;
+}
+.contenedor-cabecera{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: o 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 80px;
+}
+.logo img{
+    height: 150px;
+    display: block;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.lista-menu{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.lista-menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.lista-menu li a:hover{
+    color: chartreuse;
+}
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 0;
+}
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(red, green, blue, alpha);
+    z-index: 2;
+
+}.contenedor-banner{
+    max-width: 1200px;
+    margin: o auto;
+    position: relative;
+    z-index: 3;
+    padding: 0 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.contenedor-banner h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+.btn-principal{
+    background-color: rgb(39, 215, 39);
+    color: darkgreen;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-principal:hover{
+    background-color: rgb(53, 171, 138);
+    color: rgb(169, 226, 12);
+}
